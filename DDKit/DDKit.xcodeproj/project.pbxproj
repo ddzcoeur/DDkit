@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		471F89581C3CE35A003AC206 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 471F89571C3CE35A003AC206 /* libicucore.tbd */; };
+		F314E708BB82E15634C8CBD0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FE2AAAAFA136B36E30C6CB /* libPods.a */; };
+		FC56A1904CB6D7BB55A74DC5 /* NSString+DDSubString.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56AF5FE63157F5CEC10601 /* NSString+DDSubString.m */; };
+		FC56A2872F0E8ABE110FBB3F /* DDSocketHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A4642567A300C8FCE0D8 /* DDSocketHelper.m */; };
+		FC56A2AEF1807754BCD3400D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC56AE42D55E29127684B928 /* Main.storyboard */; };
+		FC56A42258B7AED4CF18EFDA /* DDRpcNotifRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A0227500A2BF68DD49B3 /* DDRpcNotifRequest.m */; };
+		FC56A5C9601EB29FA558ACE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC56AC85DD21708FEA4E4375 /* LaunchScreen.storyboard */; };
+		FC56A5CA00EDCAFC3F8F41ED /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC56A240D17A319EC884FB18 /* Info.plist */; };
+		FC56A602A429EBFAA15D10D3 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A1ED6A551C35E52C419E /* MainController.m */; };
+		FC56A6531D0C7B5AD340DDF1 /* DDRpcResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56AC2C39C39EB17C5756CA /* DDRpcResponse.m */; };
+		FC56A654C49BF65BB49AAE10 /* DDRpcReuqest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A92588A13DEC50BBADE0 /* DDRpcReuqest.m */; };
+		FC56A704B19CA6863AAB5500 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A3C3C3D505B6C3BD4C2F /* ViewController.m */; };
+		FC56A708E57BE79F282A32A9 /* DDNetworkProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56ACB64115117E814A0774 /* DDNetworkProxy.m */; };
+		FC56A799106D8F1379637BE1 /* DDWebsocketImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56ABBECD011EACCAD25775 /* DDWebsocketImpl.m */; };
+		FC56A89544C266071E10EFFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A30FC7E0B312A0865936 /* AppDelegate.m */; };
+		FC56A8A68A3AA9C6AD5435BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC56A297128A95718D70B572 /* Assets.xcassets */; };
+		FC56A937ADAAF6AFEC021D27 /* DDRpcEncoderImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56AA2FEB6800A3BC92DF4D /* DDRpcEncoderImpl.m */; };
+		FC56AAED499B8C0C82A8EF16 /* DDRpcHBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A627BBD7142938310CFC /* DDRpcHBRequest.m */; };
+		FC56AC4E86B54A0EC31E9A4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A617EF03E6608F498F0A /* main.m */; };
+		FC56AC6539D07BDFA63ED416 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC56A6DB9335BFC131C5505A /* Security.framework */; };
+		FC56AE582CD00F328A35D2D9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC56A6FF6CA577E6145ABA27 /* CFNetwork.framework */; };
+		FC56AFC2A2D0FDE5EC856BCC /* DDRpcAckRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A1782595BB24021881F0 /* DDRpcAckRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39992FFD2D1CCC86552FF58E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		471F89571C3CE35A003AC206 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		A1FE2AAAAFA136B36E30C6CB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E102A0A14471C2DBF1789D3C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FC56A0227500A2BF68DD49B3 /* DDRpcNotifRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRpcNotifRequest.m; sourceTree = "<group>"; };
+		FC56A1782595BB24021881F0 /* DDRpcAckRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRpcAckRequest.m; sourceTree = "<group>"; };
+		FC56A1ED6A551C35E52C419E /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		FC56A240D17A319EC884FB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		FC56A297128A95718D70B572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC56A2C4C1FF68F7D586961B /* DDRpcResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcResponse.h; sourceTree = "<group>"; };
+		FC56A30FC7E0B312A0865936 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC56A38282920E20F8ED5B4C /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		FC56A3C3C3D505B6C3BD4C2F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC56A4642567A300C8FCE0D8 /* DDSocketHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSocketHelper.m; sourceTree = "<group>"; };
+		FC56A4E09BCF63DBE7F7B556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC56A52A16CBF02F27F7B17C /* NSString+DDSubString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDSubString.h"; sourceTree = "<group>"; };
+		FC56A5973AA5297E203642B7 /* DDRpcProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcProtocol.h; sourceTree = "<group>"; };
+		FC56A5D55F5D8520E8FF0771 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC56A60352A09522649E8392 /* DDRpcAckRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcAckRequest.h; sourceTree = "<group>"; };
+		FC56A61746054299F4894F49 /* DDRpcReuqest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcReuqest.h; sourceTree = "<group>"; };
+		FC56A617EF03E6608F498F0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC56A627BBD7142938310CFC /* DDRpcHBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRpcHBRequest.m; sourceTree = "<group>"; };
+		FC56A6DB9335BFC131C5505A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FC56A6FF6CA577E6145ABA27 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FC56A76A8E2F4180AEF1D487 /* DDRpcEncoderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcEncoderProtocol.h; sourceTree = "<group>"; };
+		FC56A7CD87B4457369E55898 /* DDScoketCallBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDScoketCallBack.h; sourceTree = "<group>"; };
+		FC56A83AB4973BF9DFB885C0 /* DDKitExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDKitExample-Prefix.pch"; sourceTree = "<group>"; };
+		FC56A92588A13DEC50BBADE0 /* DDRpcReuqest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRpcReuqest.m; sourceTree = "<group>"; };
+		FC56A972CB45BB0551322A56 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		FC56AA2FEB6800A3BC92DF4D /* DDRpcEncoderImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRpcEncoderImpl.m; sourceTree = "<group>"; };
+		FC56AA7B2D57FC04E404619F /* DDRpcNotifRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcNotifRequest.h; sourceTree = "<group>"; };
+		FC56AA91B6D06F9A2242765C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC56AB8F73DE6E1E746B84BF /* DDSocketProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSocketProtocol.h; sourceTree = "<group>"; };
+		FC56ABB76FABC7D3137A9CDC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC56ABBECD011EACCAD25775 /* DDWebsocketImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDWebsocketImpl.m; sourceTree = "<group>"; };
+		FC56ABC2A0551D80A98AFE1D /* DDSocketHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSocketHelper.h; sourceTree = "<group>"; };
+		FC56AC2C39C39EB17C5756CA /* DDRpcResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRpcResponse.m; sourceTree = "<group>"; };
+		FC56AC60BD2022DCDA945037 /* DDRpcEncoderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcEncoderImpl.h; sourceTree = "<group>"; };
+		FC56ACB64115117E814A0774 /* DDNetworkProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNetworkProxy.m; sourceTree = "<group>"; };
+		FC56ACFEF487C9C12DEE00BC /* DDNetworkProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNetworkProxy.h; sourceTree = "<group>"; };
+		FC56ADE7BE96493A79BF15F2 /* DDRpcHBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcHBRequest.h; sourceTree = "<group>"; };
+		FC56AE507B30187209D7E243 /* DDWebsocketImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDWebsocketImpl.h; sourceTree = "<group>"; };
+		FC56AEB69A5839529C0BE4BB /* DDRpcDecoderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcDecoderProtocol.h; sourceTree = "<group>"; };
+		FC56AF5FE63157F5CEC10601 /* NSString+DDSubString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDSubString.m"; sourceTree = "<group>"; };
+		FC56AF62FCB89C241FAB5F1D /* DDKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC56A5B151E96CADF855AF56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471F89581C3CE35A003AC206 /* libicucore.tbd in Frameworks */,
+				F314E708BB82E15634C8CBD0 /* libPods.a in Frameworks */,
+				FC56AE582CD00F328A35D2D9 /* CFNetwork.framework in Frameworks */,
+				FC56AC6539D07BDFA63ED416 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BA1C8E668253EA4EDC40316 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				471F89571C3CE35A003AC206 /* libicucore.tbd */,
+				A1FE2AAAAFA136B36E30C6CB /* libPods.a */,
+				FC56A972CB45BB0551322A56 /* AVKit.framework */,
+				FC56A6FF6CA577E6145ABA27 /* CFNetwork.framework */,
+				FC56A6DB9335BFC131C5505A /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5B6DE5521EB03697DAB2422 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E102A0A14471C2DBF1789D3C /* Pods.debug.xcconfig */,
+				39992FFD2D1CCC86552FF58E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC56A2CE4FA3168B030C1CC4 /* BizModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC56A627BBD7142938310CFC /* DDRpcHBRequest.m */,
+				FC56ADE7BE96493A79BF15F2 /* DDRpcHBRequest.h */,
+				FC56A1782595BB24021881F0 /* DDRpcAckRequest.m */,
+				FC56A60352A09522649E8392 /* DDRpcAckRequest.h */,
+				FC56AA7B2D57FC04E404619F /* DDRpcNotifRequest.h */,
+				FC56A0227500A2BF68DD49B3 /* DDRpcNotifRequest.m */,
+			);
+			path = BizModel;
+			sourceTree = "<group>";
+		};
+		FC56A36529FCC6EF7B39FB81 = {
+			isa = PBXGroup;
+			children = (
+				FC56AF8B1EDDB24DB72F1C28 /* Products */,
+				FC56AC407A8E4A57F5F05989 /* DDKit */,
+				E5B6DE5521EB03697DAB2422 /* Pods */,
+				6BA1C8E668253EA4EDC40316 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC56A39CFADEE2C906D71054 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				FC56A4642567A300C8FCE0D8 /* DDSocketHelper.m */,
+				FC56ABC2A0551D80A98AFE1D /* DDSocketHelper.h */,
+				FC56AA2FEB6800A3BC92DF4D /* DDRpcEncoderImpl.m */,
+				FC56AC60BD2022DCDA945037 /* DDRpcEncoderImpl.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		FC56A49F264183BAD5877982 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FC56ACB64115117E814A0774 /* DDNetworkProxy.m */,
+				FC56ACFEF487C9C12DEE00BC /* DDNetworkProxy.h */,
+				FC56ABBECD011EACCAD25775 /* DDWebsocketImpl.m */,
+				FC56AE507B30187209D7E243 /* DDWebsocketImpl.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FC56A4CE20FEB152B7A2B08D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				FC56AB8F73DE6E1E746B84BF /* DDSocketProtocol.h */,
+				FC56A7CD87B4457369E55898 /* DDScoketCallBack.h */,
+				FC56A5973AA5297E203642B7 /* DDRpcProtocol.h */,
+				FC56A76A8E2F4180AEF1D487 /* DDRpcEncoderProtocol.h */,
+				FC56AEB69A5839529C0BE4BB /* DDRpcDecoderProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		FC56A6F76875E58E26C5D203 /* DDNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				FC56A49F264183BAD5877982 /* Core */,
+				FC56A4CE20FEB152B7A2B08D /* Protocol */,
+				FC56AA9CEFCE6A1188465A6F /* Model */,
+				FC56A39CFADEE2C906D71054 /* Util */,
+			);
+			name = DDNetworkKit;
+			path = ../../DDNetworkKit;
+			sourceTree = "<group>";
+		};
+		FC56A6F9C57B63F42E45946A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC56A3C3C3D505B6C3BD4C2F /* ViewController.m */,
+				FC56ABB76FABC7D3137A9CDC /* ViewController.h */,
+				FC56A1ED6A551C35E52C419E /* MainController.m */,
+				FC56A38282920E20F8ED5B4C /* MainController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC56A8254C010566816CF588 /* DDUtil */ = {
+			isa = PBXGroup;
+			children = (
+				FC56AF5FE63157F5CEC10601 /* NSString+DDSubString.m */,
+				FC56A52A16CBF02F27F7B17C /* NSString+DDSubString.h */,
+			);
+			name = DDUtil;
+			path = ../../DDUtil;
+			sourceTree = "<group>";
+		};
+		FC56AA9CEFCE6A1188465A6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC56A92588A13DEC50BBADE0 /* DDRpcReuqest.m */,
+				FC56A61746054299F4894F49 /* DDRpcReuqest.h */,
+				FC56AC2C39C39EB17C5756CA /* DDRpcResponse.m */,
+				FC56A2C4C1FF68F7D586961B /* DDRpcResponse.h */,
+				FC56A2CE4FA3168B030C1CC4 /* BizModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC56AC407A8E4A57F5F05989 /* DDKit */ = {
+			isa = PBXGroup;
+			children = (
+				FC56A240D17A319EC884FB18 /* Info.plist */,
+				FC56A297128A95718D70B572 /* Assets.xcassets */,
+				FC56AC85DD21708FEA4E4375 /* LaunchScreen.storyboard */,
+				FC56ADF5A0ACDDEC19E828F2 /* Supporting Files */,
+				FC56A5D55F5D8520E8FF0771 /* AppDelegate.h */,
+				FC56A30FC7E0B312A0865936 /* AppDelegate.m */,
+				FC56AE42D55E29127684B928 /* Main.storyboard */,
+				FC56A6F9C57B63F42E45946A /* Controller */,
+				FC56A6F76875E58E26C5D203 /* DDNetworkKit */,
+				FC56A8254C010566816CF588 /* DDUtil */,
+			);
+			path = DDKit;
+			sourceTree = "<group>";
+		};
+		FC56ADF5A0ACDDEC19E828F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC56A617EF03E6608F498F0A /* main.m */,
+				FC56A83AB4973BF9DFB885C0 /* DDKitExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC56AF8B1EDDB24DB72F1C28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC56AF62FCB89C241FAB5F1D /* DDKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC56A34E604C66504C8F21F4 /* DDKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC56A5B0DB7B3E02FB7BA4D0 /* Build configuration list for PBXNativeTarget "DDKit" */;
+			buildPhases = (
+				EBC6A661C684C58C1D28FCD8 /* Check Pods Manifest.lock */,
+				FC56A4BEDACB9974EB02508A /* Sources */,
+				FC56A5B151E96CADF855AF56 /* Frameworks */,
+				FC56A98EA969807CF13B41EE /* Resources */,
+				8FF6E262BABCAD0507ECBBDC /* Embed Pods Frameworks */,
+				1840D73CF09519D0C8A6E9DF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDKit;
+			productName = DDKit;
+			productReference = FC56AF62FCB89C241FAB5F1D /* DDKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC56AA41240AF2113FA755D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = ddz;
+			};
+			buildConfigurationList = FC56ABC09362BBC52857D75E /* Build configuration list for PBXProject "DDKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FC56A36529FCC6EF7B39FB81;
+			productRefGroup = FC56AF8B1EDDB24DB72F1C28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC56A34E604C66504C8F21F4 /* DDKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC56A98EA969807CF13B41EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC56A5CA00EDCAFC3F8F41ED /* Info.plist in Resources */,
+				FC56A8A68A3AA9C6AD5435BE /* Assets.xcassets in Resources */,
+				FC56A5C9601EB29FA558ACE4 /* LaunchScreen.storyboard in Resources */,
+				FC56A2AEF1807754BCD3400D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1840D73CF09519D0C8A6E9DF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FF6E262BABCAD0507ECBBDC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBC6A661C684C58C1D28FCD8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC56A4BEDACB9974EB02508A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC56AC4E86B54A0EC31E9A4D /* main.m in Sources */,
+				FC56A89544C266071E10EFFD /* AppDelegate.m in Sources */,
+				FC56A704B19CA6863AAB5500 /* ViewController.m in Sources */,
+				FC56A602A429EBFAA15D10D3 /* MainController.m in Sources */,
+				FC56A708E57BE79F282A32A9 /* DDNetworkProxy.m in Sources */,
+				FC56A799106D8F1379637BE1 /* DDWebsocketImpl.m in Sources */,
+				FC56A654C49BF65BB49AAE10 /* DDRpcReuqest.m in Sources */,
+				FC56A2872F0E8ABE110FBB3F /* DDSocketHelper.m in Sources */,
+				FC56A1904CB6D7BB55A74DC5 /* NSString+DDSubString.m in Sources */,
+				FC56A937ADAAF6AFEC021D27 /* DDRpcEncoderImpl.m in Sources */,
+				FC56A6531D0C7B5AD340DDF1 /* DDRpcResponse.m in Sources */,
+				FC56AAED499B8C0C82A8EF16 /* DDRpcHBRequest.m in Sources */,
+				FC56AFC2A2D0FDE5EC856BCC /* DDRpcAckRequest.m in Sources */,
+				FC56A42258B7AED4CF18EFDA /* DDRpcNotifRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC56AC85DD21708FEA4E4375 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC56A4E09BCF63DBE7F7B556 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FC56AE42D55E29127684B928 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC56AA91B6D06F9A2242765C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC56A1D63CC5C4CD9747B72D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC56A90B919CE6BC77CD6854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC56A9DC4CEFBB41CA9B63EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39992FFD2D1CCC86552FF58E /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "DDKit/DDkitExample-Prefix.pch";
+				INFOPLIST_FILE = DDKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddz.DDKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FC56AA47CEC8765370A5C780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E102A0A14471C2DBF1789D3C /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "DDKit/DDkitExample-Prefix.pch";
+				INFOPLIST_FILE = DDKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddz.DDKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC56A5B0DB7B3E02FB7BA4D0 /* Build configuration list for PBXNativeTarget "DDKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC56AA47CEC8765370A5C780 /* Debug */,
+				FC56A9DC4CEFBB41CA9B63EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC56ABC09362BBC52857D75E /* Build configuration list for PBXProject "DDKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC56A1D63CC5C4CD9747B72D /* Debug */,
+				FC56A90B919CE6BC77CD6854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC56AA41240AF2113FA755D7 /* Project object */;
+}

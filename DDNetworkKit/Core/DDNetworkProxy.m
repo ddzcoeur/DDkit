@@ -7,11 +7,15 @@
 #import "DDSocketProtocol.h"
 #import "DDWebsocketImpl.h"
 
-@interface DDNetworkProxy ()
+
+
+@interface DDNetworkProxy (){
+
+}
 
 @property (nonatomic, strong) id<DDSocketProtocol> socket;
-@property (nonatomic, strong) NSString *host;
-@property (nonatomic, strong) NSString *port;
+@property (nonatomic, strong) NSString *urlAddr;
+
 
 @end
 
@@ -38,25 +42,22 @@
 
 #pragma mark -Config method
 
-- (void)setHost:(NSString *)url {
-    self.host = url;
+- (void)setUrl:(NSString *)url{
+    self.urlAddr = url;
 }
 
-- (void)setPort:(NSString *)port {
-    self.port = port;
-}
+
+#pragma mark -event method
 
 - (void)send:(NSData *)data {
 
 }
 
-#pragma mark -event method
-
 - (void)connect {
     [self close];
 
     self.socket = [DDWebsocketImpl new];
-    [self.socket setConnectUrl:self.host andPort:self.port];
+    [self.socket setConnectUrl:self.urlAddr];
     [self.socket setRpcDel:self];
     [self.socket open];
 }
@@ -80,5 +81,9 @@
 
 - (void)didCloseConnectToHost:(NSString *)hostAddr port:(NSString *)port {
     _isConnected = NO;
+}
+
+- (void)didReceivedMessage:(NSData *)msg {
+    [[NSNotificationCenter defaultCenter] postNotificationName:SocketNotif_Received object:msg];
 }
 @end

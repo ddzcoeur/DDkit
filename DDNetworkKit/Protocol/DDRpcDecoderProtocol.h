@@ -7,4 +7,6 @@
 
 @protocol DDRpcDecoderProtocol <NSObject>
 
+- (NSDictionary *)decodeFromData:(NSData *)msg;
+
 @end

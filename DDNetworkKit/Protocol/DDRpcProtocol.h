@@ -7,6 +7,8 @@
 
 @protocol DDRpcProtocol <NSObject>
 
+@optional
+
 - (void)didReceivedMessage:(NSData *)msg;
 
 - (void)didConnectToHost:(NSString *)hostAddr port:(NSString *)port;

@@ -7,16 +7,19 @@
 #import "DDRpcProtocol.h"
 
 
+#define SocketNotif_Received @"socketnotif_receivedata"
+
+
 @interface DDNetworkProxy : NSObject<DDRpcProtocol>
 
 + (DDNetworkProxy *)getInstance;
 
-- (void)setHost:(NSString *)url;
-- (void)setPort:(NSString *)port;
+- (void)setUrl:(NSString *)url;
 - (void)connect;
 - (void)close;
 
 - (void)send:(NSData *)data;
+
 
 - (BOOL)isConnected;
 

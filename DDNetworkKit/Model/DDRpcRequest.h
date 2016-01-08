@@ -5,8 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-
-@interface DDRpcReuqest : NSObject
+@interface DDRpcRequest : NSObject
 
 - (NSData *)convertToData;
 

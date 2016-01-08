@@ -8,6 +8,8 @@
 
 @interface DDSocketHelper : NSObject
 
++ (DDSocketHelper *)getInstance;
+
 - (int)getNextReqid;
 
 

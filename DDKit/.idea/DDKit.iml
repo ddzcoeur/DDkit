@@ -12,9 +12,13 @@
       <sourceFolder url="file://$MODULE_DIR$/DDKit/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DDKit/Assets.xcassets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DDKit/Controller/ViewController.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/DDKit/Controller/MainController.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/DDKit/Controller/ViewController.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DDKit/Controller/MainController.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DDKit/Controller/DDChatCell.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DDKit/Controller/DDChatCell.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DDKit/Controller/ViewController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DDKit/Controller/DDMessageBase.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DDKit/Controller/MainController.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DDKit/Controller/DDMessageBase.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DDKit/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DDKit/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
@@ -45,28 +49,30 @@
     </content>
     <content url="file://$MODULE_DIR$/../DDNetworkKit">
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Util/DDRpcEncoderImpl.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Util/DDSocketHelper.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Util/DDRpcEncoderImpl.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Util/DDSocketHelper.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Util/DDSocketHelper.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/DDRpcReuqest.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/DDRpcReuqest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/ErrorModel/DDNetworkErrorBase.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/ErrorModel/DDNetworkErrorBase.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/BizModel/DDRpcHBRequest.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/BizModel/DDRpcNotifRequest.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/BizModel/DDRpcNotifRequest.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/BizModel/DDRpcAckRequest.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/BizModel/DDRpcHBRequest.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/BizModel/DDRpcAckRequest.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/DDRpcResponse.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/DDRpcResponse.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/DDRpcRequest.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/DDRpcResponse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Model/DDRpcRequest.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Protocol/DDRpcProtocol.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Protocol/DDRpcDecoderProtocol.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Protocol/DDScoketCallBack.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Protocol/DDRpcEncoderProtocol.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Protocol/DDSocketProtocol.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Core/DDNetworkProxy.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Core/DDWebsocketImpl.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Core/DDWebsocketImpl.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Core/DDNetworkProxy.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Protocol/DDRpcProtocol.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Protocol/DDSocketProtocol.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Protocol/DDScoketCallBack.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Protocol/DDRpcDecoderProtocol.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../DDNetworkKit/Protocol/DDRpcEncoderProtocol.h" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../DDUtil">
       <sourceFolder url="file://$MODULE_DIR$/../DDUtil/NSString+DDSubString.h" isTestSource="false" />

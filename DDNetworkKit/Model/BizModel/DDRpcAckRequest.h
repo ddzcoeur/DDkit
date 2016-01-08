@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DDRpcReuqest.h"
+#import "DDRpcRequest.h"
 
-@interface DDRpcAckRequest : DDRpcReuqest
+@interface DDRpcAckRequest : DDRpcRequest
 @end

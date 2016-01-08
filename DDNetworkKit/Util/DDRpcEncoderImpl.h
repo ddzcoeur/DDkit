@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DDRpcEncoderProtocol.h"
 
-
-@interface DDRpcEncoderImpl : NSObject
+@interface DDRpcEncoderImpl : NSObject<DDRpcEncoderProtocol>
 @end

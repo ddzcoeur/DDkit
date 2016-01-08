@@ -4,6 +4,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DDRpcRequest.h"
 
 @protocol DDRpcEncoderProtocol <NSObject>
+
+
+- (void)encodeRequest:(DDRpcRequest *)request method:(NSString *)method content:(NSData *)content;
+
 @end

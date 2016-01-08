@@ -4,14 +4,14 @@
 //
 
 #import <Foundation/Foundation.h>
-@class DDRpcReuqest;
+#import "DDRpcRequest.h";
 
 /**
  * 心跳请求
  * param:token
  */
 
-@interface DDRpcHBRequest : DDRpcReuqest
+@interface DDRpcHBRequest : DDRpcRequest
 
 @property (nonatomic, strong) NSString *token;
 

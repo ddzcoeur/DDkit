@@ -6,20 +6,20 @@
 #import <Foundation/Foundation.h>
 #import "DDRpcProtocol.h"
 
-@class DDRpcReuqest;
+@class DDRpcRequest;
 
 @protocol DDSocketProtocol <NSObject>
 
 - (void)setRpcDel:(id<DDRpcProtocol>)del;
 
-- (void)setConnectUrl:(NSString *)url andPort:(NSString *)port;
+- (void)setConnectUrl:(NSString *)url;
 
 
 - (void)open;
 
 - (void)close;
 
-- (void)sendRequest:(DDRpcReuqest *)req;
+- (void)sendRequest:(DDRpcRequest *)req;
 
 @optional
 - (void)reconnect;

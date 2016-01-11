@@ -22,6 +22,7 @@
 
     int reqid = [[DDSocketHelper getInstance] getNextReqid];
     [request requestWithReqid:reqid method:method content:content];
+
 }
 
 @end

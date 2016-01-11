@@ -5,6 +5,12 @@
 
 #import <Foundation/Foundation.h>
 #import "DDRpcRequest.h"
+#import "DDRpcDefine.h"
+
+
 
 @interface DDRpcNotifRequest : DDRpcRequest
+
+@property (nonatomic) DDRpcNotifType notifType;
+
 @end

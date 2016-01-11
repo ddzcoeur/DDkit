@@ -13,6 +13,8 @@
 		FC56A1904CB6D7BB55A74DC5 /* NSString+DDSubString.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56AF5FE63157F5CEC10601 /* NSString+DDSubString.m */; };
 		FC56A2872F0E8ABE110FBB3F /* DDSocketHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A4642567A300C8FCE0D8 /* DDSocketHelper.m */; };
 		FC56A2AEF1807754BCD3400D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC56AE42D55E29127684B928 /* Main.storyboard */; };
+		FC56A368525BC907B59DB44D /* DDSocketConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A5FC04539B9ABB8EEDB2 /* DDSocketConfig.m */; };
+		FC56A41FC67A3D82BC85BE45 /* DDRpcDecoderImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A77B5A728AEEE21C8E09 /* DDRpcDecoderImpl.m */; };
 		FC56A42258B7AED4CF18EFDA /* DDRpcNotifRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56A0227500A2BF68DD49B3 /* DDRpcNotifRequest.m */; };
 		FC56A5C9601EB29FA558ACE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC56AC85DD21708FEA4E4375 /* LaunchScreen.storyboard */; };
 		FC56A5CA00EDCAFC3F8F41ED /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC56A240D17A319EC884FB18 /* Info.plist */; };
@@ -40,7 +42,9 @@
 		A1FE2AAAAFA136B36E30C6CB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E102A0A14471C2DBF1789D3C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FC56A0227500A2BF68DD49B3 /* DDRpcNotifRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRpcNotifRequest.m; sourceTree = "<group>"; };
+		FC56A031403D3E49FFEEEC41 /* DDRpcDecoderImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcDecoderImpl.h; sourceTree = "<group>"; };
 		FC56A1782595BB24021881F0 /* DDRpcAckRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRpcAckRequest.m; sourceTree = "<group>"; };
+		FC56A1CCF84776D52212F519 /* DDSocketConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSocketConfig.h; sourceTree = "<group>"; };
 		FC56A1D7C8B37C7BDC2D7A94 /* DDMessageBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMessageBase.m; sourceTree = "<group>"; };
 		FC56A1ED6A551C35E52C419E /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 		FC56A240D17A319EC884FB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 		FC56A52A16CBF02F27F7B17C /* NSString+DDSubString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDSubString.h"; sourceTree = "<group>"; };
 		FC56A5973AA5297E203642B7 /* DDRpcProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcProtocol.h; sourceTree = "<group>"; };
 		FC56A5D55F5D8520E8FF0771 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC56A5FC04539B9ABB8EEDB2 /* DDSocketConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSocketConfig.m; sourceTree = "<group>"; };
 		FC56A60352A09522649E8392 /* DDRpcAckRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcAckRequest.h; sourceTree = "<group>"; };
 		FC56A61746054299F4894F49 /* DDRpcRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcRequest.h; sourceTree = "<group>"; };
 		FC56A617EF03E6608F498F0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,8 +68,10 @@
 		FC56A6DB9335BFC131C5505A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FC56A6FF6CA577E6145ABA27 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		FC56A76A8E2F4180AEF1D487 /* DDRpcEncoderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcEncoderProtocol.h; sourceTree = "<group>"; };
+		FC56A77B5A728AEEE21C8E09 /* DDRpcDecoderImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRpcDecoderImpl.m; sourceTree = "<group>"; };
 		FC56A7CD87B4457369E55898 /* DDScoketCallBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDScoketCallBack.h; sourceTree = "<group>"; };
 		FC56A83AB4973BF9DFB885C0 /* DDKitExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDKitExample-Prefix.pch"; sourceTree = "<group>"; };
+		FC56A883743A304E5C20948E /* DDRpcDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRpcDefine.h; sourceTree = "<group>"; };
 		FC56A92588A13DEC50BBADE0 /* DDRpcRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRpcRequest.m; sourceTree = "<group>"; };
 		FC56A972CB45BB0551322A56 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		FC56A9E1E3FE8D8C8E2D1856 /* DDMessageBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMessageBase.h; sourceTree = "<group>"; };
@@ -154,6 +161,8 @@
 				FC56ABC2A0551D80A98AFE1D /* DDSocketHelper.h */,
 				FC56AA2FEB6800A3BC92DF4D /* DDRpcEncoderImpl.m */,
 				FC56AC60BD2022DCDA945037 /* DDRpcEncoderImpl.h */,
+				FC56A77B5A728AEEE21C8E09 /* DDRpcDecoderImpl.m */,
+				FC56A031403D3E49FFEEEC41 /* DDRpcDecoderImpl.h */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -165,6 +174,8 @@
 				FC56ACFEF487C9C12DEE00BC /* DDNetworkProxy.h */,
 				FC56ABBECD011EACCAD25775 /* DDWebsocketImpl.m */,
 				FC56AE507B30187209D7E243 /* DDWebsocketImpl.h */,
+				FC56A5FC04539B9ABB8EEDB2 /* DDSocketConfig.m */,
+				FC56A1CCF84776D52212F519 /* DDSocketConfig.h */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -177,6 +188,7 @@
 				FC56A5973AA5297E203642B7 /* DDRpcProtocol.h */,
 				FC56A76A8E2F4180AEF1D487 /* DDRpcEncoderProtocol.h */,
 				FC56AEB69A5839529C0BE4BB /* DDRpcDecoderProtocol.h */,
+				FC56A883743A304E5C20948E /* DDRpcDefine.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -406,6 +418,8 @@
 				FC56AEAD87005BB1EBD8DA77 /* DDChatCell.m in Sources */,
 				FC56AB6E82A7F46586344CF4 /* DDMessageBase.m in Sources */,
 				FC56A0EE6F2B658E0AF12F46 /* DDNetworkErrorBase.m in Sources */,
+				FC56A41FC67A3D82BC85BE45 /* DDRpcDecoderImpl.m in Sources */,
+				FC56A368525BC907B59DB44D /* DDSocketConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

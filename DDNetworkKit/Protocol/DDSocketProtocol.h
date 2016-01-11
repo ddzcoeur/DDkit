@@ -7,6 +7,7 @@
 #import "DDRpcProtocol.h"
 
 @class DDRpcRequest;
+@class DDRpcHBRequest;
 
 @protocol DDSocketProtocol <NSObject>
 
@@ -14,12 +15,13 @@
 
 - (void)setConnectUrl:(NSString *)url;
 
-
 - (void)open;
 
 - (void)close;
 
 - (void)sendRequest:(DDRpcRequest *)req;
+
+- (void)sendHbRequest:(DDRpcHBRequest *)req;
 
 @optional
 - (void)reconnect;

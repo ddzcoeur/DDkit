@@ -6,7 +6,12 @@
 #import "DDNetworkProxy.h"
 #import "DDSocketProtocol.h"
 #import "DDWebsocketImpl.h"
-
+#import "DDRpcDecoderProtocol.h"
+#import "DDRpcEncoderProtocol.h"
+#import "DDRpcDecoderImpl.h"
+#import "DDRpcEncoderImpl.h"
+#import "DDRpcHBRequest.h"
+#import "DDSocketConfig.h"
 
 
 @interface DDNetworkProxy (){
@@ -14,7 +19,7 @@
 }
 
 @property (nonatomic, strong) id<DDSocketProtocol> socket;
-@property (nonatomic, strong) NSString *urlAddr;
+@property (nonatomic, strong) DDSocketConfig *config;
 
 
 @end
@@ -36,6 +41,7 @@
     self = [super init];
     if (self){
         _isConnected = NO;
+        self.config = [DDSocketConfig new];
     }
     return self;
 }
@@ -43,21 +49,40 @@
 #pragma mark -Config method
 
 - (void)setUrl:(NSString *)url{
-    self.urlAddr = url;
+    self.config.urlAddr = url;
 }
 
 
 #pragma mark -event method
 
 - (void)send:(NSData *)data {
+    if (_isConnected){
+        DDRpcRequest *req = [DDRpcRequest new];
+        id<DDRpcEncoderProtocol> encoder = [DDRpcEncoderImpl new];
+        [encoder encodeRequest:req method:DDRpcDefine_Method_Request content:data];
+        [self.socket sendRequest:req];
+    } else{
+        [self.socket reconnect];
+    }
+}
 
+- (void)sendAck:(int)ackid{
+
+}
+
+- (void)sendHb{
+    DDRpcHBRequest *hbRequest = [DDRpcHBRequest new];
+    id<DDRpcEncoderProtocol> encoder = [DDRpcEncoderImpl new];
+    NSString *token = self.config.token;
+    NSData *tokenData = [token dataUsingEncoding:NSUTF8StringEncoding];
+    [encoder encodeRequest:hbRequest method:DDRpcDefine_Method_Hb content:tokenData];
+    [self.socket sendHbRequest:hbRequest];
 }
 
 - (void)connect {
     [self close];
-
     self.socket = [DDWebsocketImpl new];
-    [self.socket setConnectUrl:self.urlAddr];
+    [self.socket setConnectUrl:self.config.urlAddr];
     [self.socket setRpcDel:self];
     [self.socket open];
 }
@@ -84,6 +109,33 @@
 }
 
 - (void)didReceivedMessage:(NSData *)msg {
-    [[NSNotificationCenter defaultCenter] postNotificationName:SocketNotif_Received object:msg];
+    // decode msg
+    id<DDRpcDecoderProtocol> decoder = [DDRpcDecoderImpl new];
+    @try {
+        NSDictionary *dataDic = [decoder decodeFromData:msg];
+        NSNumber *typeValue = [dataDic objectForKey:@"type"];
+        if ([typeValue intValue] == RPCNOTIFREQUEST){
+            //TODO send ack request
+        } else if ([typeValue intValue] == RPCNOTIFREQUEST){
+            //send content to app
+
+            NSData *content = [dataDic objectForKey:@"content"];
+            [[NSNotificationCenter defaultCenter]
+                    postNotificationName:SocketNotif_Received object:content];
+        } else if ([typeValue intValue] == RPCACKRESPONSE){
+
+        } else if([typeValue intValue]==RPCRESPONSE){
+
+        } else{
+            //TODO post error
+        }
+    } @catch(NSException *ex){
+        //TODO post error
+        return;
+    }
+}
+
+- (void)didReceivedHBMessage:(NSData *)msg {
+
 }
 @end

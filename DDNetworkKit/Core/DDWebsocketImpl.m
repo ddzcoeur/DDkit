@@ -5,8 +5,8 @@
 
 #import "DDWebsocketImpl.h"
 #import "DDRpcRequest.h"
+#import "DDRpcHBRequest.h"
 #import "NSString+DDSubString.h"
-#import "DDRpcNotifRequest.h"
 
 #define DDSocketQueueSpecific "com.ddzkit.websocketqueue"
 
@@ -84,7 +84,7 @@
 
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL
             URLWithString:[NSString
-                    stringWithFormat:@"%@:%@",self.mUrlAddr]]];
+                    stringWithFormat:@"%@",self.mUrlAddr]]];
     self.webSocket = [[SRWebSocket alloc] initWithURLRequest:request protocols:nil allowsUntrustedSSLCertificates:YES];
     [self.webSocket setDelegateDispatchQueue:_socketQueue];
     [self.webSocket setDelegate:self];
@@ -94,6 +94,13 @@
     NSData *data = [req convertToData];
     if (self.webSocket){
         [self.webSocket send:data];
+    }
+}
+
+- (void)sendHbRequest:(DDRpcHBRequest *)req {
+    NSData *pingData = [req convertToData];
+    if (self.webSocket){
+        [self.webSocket sendPing:pingData];
     }
 }
 
@@ -152,6 +159,9 @@
 - (void)webSocket:(SRWebSocket *)webSocket didReceivePong:(NSData *)pongPayload;
 {
     NSLog(@"Websocket received pong");
+    if ([self.rpcDelegate respondsToSelector:@selector(didReceivedHBMessage:)]){
+        [self.rpcDelegate didReceivedHBMessage:pongPayload];
+    }
 }
 
 

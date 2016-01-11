@@ -8,6 +8,10 @@
 
 
 #define SocketNotif_Received @"socketnotif_receivedata"
+#define SocketNotif_Connect_Connected @"socket_connected"
+#define SocketNotif_Connect_Close @"socket_connect_close"
+#define SocketNotif_Connect_Succ @"socket_connect_succ"
+#define SocketNotif_Connect_Fail @"socket_connect_fail"
 
 
 @interface DDNetworkProxy : NSObject<DDRpcProtocol>

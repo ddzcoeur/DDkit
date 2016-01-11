@@ -4,6 +4,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DDRpcDefine.h"
+
+
 
 @protocol DDRpcDecoderProtocol <NSObject>
 

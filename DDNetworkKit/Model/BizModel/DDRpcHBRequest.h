@@ -15,4 +15,6 @@
 
 @property (nonatomic, strong) NSString *token;
 
+- (void)requestWithToken:(NSString *)token;
+
 @end

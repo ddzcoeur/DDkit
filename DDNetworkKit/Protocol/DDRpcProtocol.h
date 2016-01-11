@@ -17,4 +17,6 @@
 
 - (void)didCloseConnectToHost:(NSString *)hostAddr port:(NSString *)port;
 
+- (void)didReceivedHBMessage:(NSData *)msg;
+
 @end

@@ -7,7 +7,7 @@
 
 
 @implementation DDSocketHelper {
-
+    int _reqid;
 }
 
 + (DDSocketHelper *)getInstance {
@@ -17,6 +17,24 @@
         helper = [DDSocketHelper new];
     });
     return helper;
+}
+
+- (id)init {
+    self = [super init];
+    if (self){
+        _reqid = 0;
+    }
+    return self;
+}
+
+- (int)getNextReqid {
+    if (_reqid<10001){
+        _reqid ++;
+        return _reqid;
+    } else{
+        _reqid = 0;
+        return _reqid;
+    }
 }
 
 @end

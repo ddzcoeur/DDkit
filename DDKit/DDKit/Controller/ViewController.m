@@ -37,12 +37,20 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
+
+    self.inputView = [[UITextField alloc] initWithFrame:CGRectZero];
+    self.inputView.delegate = self;
+    [self.view addSubview:self.inputView];
 }
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
     self.tableView.frame = self.view.frame;
     [self.tableView reloadData];
+
+    float off_y = self.view.frame.size.height-44;
+    CGRect rect = CGRectMake(0,off_y,self.view.frame.size.width,44);
+    self.inputView.frame = rect;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -71,6 +79,16 @@
 
 
 #pragma mark -netproxy
+- (void)processMsgSend{
+    NSString *content = self.inputView.text;
+    NSData *contentData = [content dataUsingEncoding:NSUTF8StringEncoding];
+    [[DDNetworkProxy getInstance] send:contentData];
+}
 
+#pragma mark -textfield delegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [self processMsgSend];
+    return YES;
+}
 
 @end
